@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IET MBCET</title>
+
+    <meta name="description" content="IET MBCET having around 200 members from EEE, ECE, CSE and ME
+			streams and 6 faculty from EEE is an integral part of IET Kanyakumari Local
+			Network since its induction. It is actively involved in Inspiring, Promoting
+			and Guiding its members and non-members in their professional and personal
+			growth through Skill development programme, Outreach activities, Life skill
+			programme." />
+    <meta name="keywords" content="IET MBCET, IET" />
+    <meta name="author" content="Diya Mariam Biju" />
+    <link rel="icon" href="img/favicon/favicon.ico" />
+
+    <link rel="icon" type="image/svg+xml" href="images/LOGO.svg" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="igniet.css"/>
+</head>
+
+<body>
+
+      <div class="container">
+        <div class="row mt-4 " >
+            <div class="col-md-6 offset-3 border bg-light p-5"  >
+                <h2 class=" mt-4 mb-5 text-center" style="color: #72477a;"><b>REGISTER</b></h2>
+                <div class="d-flex justify-content-center">
+                    <form  id="contactForm"  autocomplete="off">
+                    <div class="form-group">
+                        <div class="alert">Your message sent</div>
+                        <label style="color: #72477a;" for="taskname"><b>Name:</b></label><br>
+                        <div class="mt-2 input-group-default">
+                            
+                            <input required type="text" id="name" class="form-control" size="70" id="taskname" name="taskname"><br>
+                        </div>
+                    
+                        <label style="color: #72477a;" for="taskdesc"><b>Email:</b></label><br>
+                        <div class="mt-2 input-group-default">
+             <!--                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"> -->
+                              <input required class="form-control" id="email" type="email" id="taskdesc" name="taskdesc"><br>   
+    
+                        </div>
+                        <label style="color: #72477a;" for="taskname" ><b>Branch:</b></label><br>
+                        <div class="mt-2 input-group-default">
+                            <select required id="inputState" class="form-control">
+                                <option value="" disabled selected hidden>Select</option>
+                                <option >CS</option>
+                                <option >EEE</option>
+                                <option>Mech</option>
+                                <option>Civil</option> 
+                                <option >EC</option>
+            
+                            </select>
+                   <!--     <input required type="text" class="form-control" id="taskname" name="taskname"><br>     -->
+                        </div><br/>
+                        <label style="color: #72477a;" for="taskname"><b>Batch:</b></label><br>
+                        <div class="mt-2 input-group-default">
+                            <select required id="inputStates" class="form-control">
+                                <option value="" disabled selected hidden>Select</option>
+                                <option >1</option>
+                                <option >2</option>
+                            </select>
+                        </div><br/>
+                        <label style="color: #72477a;" for="taskname" ><b>Mobile no. (WhattsApp):</b></label><br>
+                        <div class="mt-2 input-group-default">
+                            
+                            <input required type="text" id="no" class="form-control" id="taskname" name="taskname"><br>
+                        </div>
+
+                        <p style="color: #72477a;"> <b>Google Pay</b> <br/><br/>
+                            GPay to the following number –     8301832953<br/>
+                            The GPay name displayed would be:  Vaibhav K<br/>
+                            Give transaction remarks as: 	        Abaqus-SkillX<br/>
+                            </p><br/>
+
+                        <p style="color: #72477a;"><b>Bank Transfer</b><br/><br/>
+                            Account Name: 	     M/s Faculty Advisor, IET-MBCET Student Chapter<br/>
+                            Account No.	     0483053000016429<br/>
+                            IFSC Code: 	     SIBL0000483<br/>
+                            Bank and Branch:   South Indian Bank, Nalanchira <br/>
+                            Give transaction remarks as :    Abaqus-Skill<br/>
+                            </p><br/>
+
+                        <label style="color: #72477a;" for="taskname"><b>Upload the screenshot of fee payment (Rs. 100):</b></label><br>
+                        <input required type="file" class="mt-3" id="files" onchange="uploadData()" accept="image/png, image/jpeg" name="Files[]" multiple/><br/>
+                        <br/><br/>
+                        <button id="sub" type="submit" size="90" style="background-color: #72477a; color: white;" class="form-control btn btn-lg btn-block">Submit</button><br>
+
+                        <br>
+                    </div>
+    
+                </form><br/><br/>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
+
+    <script src="./igniet.js"></script>
+
+</body>
+
+</html>

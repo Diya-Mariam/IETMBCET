@@ -1,0 +1,202 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+
+.d1 {
+	position: relative;
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+
+.d1,
+.d1 * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.d1 a {
+	color: #333;
+}
+
+.d1 a:hover {
+	text-decoration: none;
+}
+
+.d1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.d1 {
+	position: relative;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	margin: auto;
+}
+
+.d1 .img {
+	position: relative;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+}
+
+.d1 .img::before{
+	position: absolute;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+
+.d1 .img img {
+	border-radius: 50%;
+}
+
+.d1 .info {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	border-radius: 50%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.d1.info{
+	background: #1a4a72;
+	background: rgba(26, 74, 114, 0.6);
+}
+
+.d1 .info{
+	background: linear-gradient(133deg, #572b59cf 10%, #35122cf2 74%);
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+
+.d1 .info h3 {
+	visibility: hidden;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 0 30px;
+	padding: 55px 0 0 0;
+	height: 110px;
+	text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+
+.d1 .info p{
+	visibility: hidden;
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+
+.d1 a:hover .info{
+	opacity: 1;
+}
+
+.d1 a:hover h3{
+	visibility: visible;
+}
+
+.d1 a:hover p{
+	visibility: visible;
+}
+
+.size {
+	font-size: 30px;
+	font-style: italic;
+}
+
+.hall {
+	font-weight: bold;
+}
+
+.sized {
+	font-size: 47px;
+}
+
+.bg1 {
+	background-image: url(img/team.jpg);
+	height: 550px;
+	min-width: 100%;
+	background-position: center;
+	background-repeat: none;
+	background-size: cover;
+}
+
+.bottomleft {
+	position: absolute;
+	bottom: 25px;
+	left: 16px;
+	color: white;
+	font-size: 3rem;
+	font-weight: bolder;
+	width: 27rem;
+	letter-spacing: 12px;
+}
+
+.navbar {
+	background-color: #72477a;
+}
+
+.active {
+	color: white;
+	font-weight: bold;
+}
+
+.active:hover {
+	color: white;
+}
+
+footer {
+	width: 100%;
+	background-color: #72477a;
+}
+
+footer .d-none {
+	margin-right: 767px;
+}
+
+.row a,
+.hello p {
+	color: white;
+}
+
+.hello a {
+	padding: 0px 4px;
+}
+
+.hello a:hover {
+	color: violet;
+}

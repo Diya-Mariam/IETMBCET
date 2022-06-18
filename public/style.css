@@ -1,0 +1,176 @@
+@media (min-width: 768px) {
+	html {
+		scroll-snap-type: y mandatory;
+		overflow-y: scroll;
+	}
+	section {
+		height: 100vh;
+	}
+}
+	
+.img_head {
+	height: 300px;
+}
+
+.owl-prev {
+	width: 15px;
+	height: 100px;
+	position: absolute;
+	top: 30%;
+	left: -30px;
+	display: block !important;
+	border: 0px solid black;
+}
+
+.owl-prev > span {
+	font-size: 3rem;
+}
+
+.owl-next {
+	width: 15px;
+	height: 100px;
+	position: absolute;
+	top: 30%;
+	right: -30px;
+	display: block !important;
+	border: 0px solid black;
+}
+
+.owl-prev i,
+.owl-next i {
+	transform: scale(1, 6);
+	color: #ccc;
+}
+
+
+section,
+footer {
+	scroll-snap-align: start;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar {
+	background-color: #72477a;
+}
+
+.active {
+	color: white;
+	font-weight: bold;
+}
+
+.active:hover {
+	color: white;
+}
+
+#showcase {
+	background-image: url("img/mbcet.jpg");
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.glass-container {
+	backdrop-filter: blur(19px) saturate(134%);
+	/*-webkit-backdrop-filter: blur(19px) saturate(134%);  */
+	background-color: rgb(114 71 122 / 50%);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	padding: 3%;
+	height: 40%;
+	width: 90%;
+}
+
+img {
+	width: 100%;
+	height: 100vh;
+}
+
+.about-img {
+	height: 50vh;
+}
+
+.boxes {
+	background-color: #ece0ee;
+}
+
+.row div,
+h1,
+h2,
+.row p,
+.para,
+.sub-heading {
+	color: #72477a;
+}
+
+.btn-lg {
+	background-color: #72477a;
+	color: white;
+	padding: auto 30px;
+	border-radius: 26px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.btn-lg:hover {
+	opacity: 0.9;
+	color: white;
+}
+
+label,
+input {
+	color: #72477a;
+}
+
+.imp {
+	background: #ece0ee;
+	border-radius: 3px 50px 130px;
+}
+
+#contactus .btn {
+	background-color: #ece0ee;
+	color: #72477a;
+}
+
+#contactus .send:hover {
+	opacity: 0.8;
+}
+
+footer {
+	width: 100%;
+	background-color: #72477a;
+}
+
+footer .d-none {
+	margin-right: 767px;
+}
+
+.row a,
+.hello p {
+	color: white;
+}
+
+.hello a {
+	padding: 0px 4px;
+}
+
+.hello a:hover {
+	color: violet;
+}
+
+
+#background {
+	padding-top: 9%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	height: 100vh;
+	z-index: -1;
+}

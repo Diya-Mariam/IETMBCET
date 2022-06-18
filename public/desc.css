@@ -1,0 +1,54 @@
+.size {
+    font-size: 20px;
+}
+
+.card{
+    background: rgb(127, 76, 121);
+}
+
+.card-title, .card-text {
+    color: white;
+}
+
+
+.navbar {
+	background-color: #72477a;
+}
+
+.active {
+	color: white;
+	font-weight: bold;
+}
+
+.active:hover {
+	color: white;
+}
+
+
+footer {
+	width: 100%;
+	background-color: #72477a;
+}
+
+.d-none,
+footer {
+	margin-right: 767px;
+}
+
+.row a i,
+.hello p {
+	color: white;
+}
+
+.hello a {
+	padding: 0px 4px;
+}
+
+.hello a:hover i {
+	color: violet;
+}
+
+.para,
+.sub-heading {
+	color: #72477a;
+}

@@ -1,0 +1,49 @@
+html {
+
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+
+	scroll-behavior: smooth;
+}
+/*
+section{
+	height: 100vh;
+}
+
+section,
+footer {
+	scroll-snap-align: start;
+}
+*/
+
+footer {
+	width: 100%;
+	background-color: #72477a;
+}
+
+footer .d-none {
+	margin-right: 767px;
+}
+
+.card1 {
+	transition: all 0.5s ease;
+	background: #fbfbfb;
+	padding: 10px;
+  }
+.card1:hover {
+	background: rgb(216, 200, 215); 
+	box-shadow: 5px 5px 0px 0px rgba(17, 16, 16, 0.75);
+	padding: 20px;
+}
+
+.card2{
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+.card2:hover{
+
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1);
+}
